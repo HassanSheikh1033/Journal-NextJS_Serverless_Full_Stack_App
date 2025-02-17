@@ -13,8 +13,10 @@ const nextConfig = {
     ],
   },
   experimental: {
-    runtime: 'nodejs', // Force Node.js runtime instead of Edge
+    runtime: 'nodejs', 
+    serverComponents: true, 
   },
+  output: 'standalone',
 };
 
 export default nextConfig;
