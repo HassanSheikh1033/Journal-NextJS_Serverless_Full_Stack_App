@@ -1,4 +1,3 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
@@ -12,6 +11,9 @@ const nextConfig = {
         hostname: "cdn.pixabay.com",
       },
     ],
+  },
+  experimental: {
+    runtime: 'nodejs', // Force Node.js runtime instead of Edge
   },
 };
 
